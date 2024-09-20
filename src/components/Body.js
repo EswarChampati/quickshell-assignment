@@ -1,5 +1,3 @@
-// src/components/Body.js
-import React from "react";
 import useFetch from "../hooks/useFetch";
 import { URL } from "../utils/constant";
 
