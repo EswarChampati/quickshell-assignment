@@ -1,5 +1,15 @@
+// src/components/Body.js
+import React from "react";
+import useFetch from "../hooks/useFetch";
+import { URL } from "../utils/constant";
+
 const Body = () => {
-  return <div>Body</div>;
+  const { data, loading, error } = useFetch(URL);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+
+  return <div></div>;
 };
 
 export default Body;
