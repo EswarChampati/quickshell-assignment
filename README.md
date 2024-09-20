@@ -9,3 +9,7 @@
 1. lets create the context api in the utils and constants file.
 2. lets make the api call using the useEffect() and store the object in the statevariable. these all things should happened in the custom hook named as the useFetch() which takes url as as input and return the data, error and loading under the hooks folder.
 3. add the url in the constants.js and return it.
+
+## step3
+
+1. added the css

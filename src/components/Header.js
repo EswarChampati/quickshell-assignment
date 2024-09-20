@@ -8,8 +8,8 @@ const Header = () => {
     setOpen((prev) => !prev);
   };
   return (
-    <div>
-      <button onClick={toggleShow}>
+    <div className="header">
+      <button id="headerButton" onClick={toggleShow}>
         <DisplayIcon />
         Display
         <DownIcon />
