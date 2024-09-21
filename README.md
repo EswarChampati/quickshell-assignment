@@ -22,3 +22,7 @@
 4. Add the useRef() in the filters.js and get teh value of the selected filter.
 5. to get the value from the filter and want to pass that as the value to the context and that value wil be used by the Body by providing that to the app.js
 6. App.js is wrapped with the component which is function provider and that component takes the content in between that as the children. that children will be again returned by the component with the context provider values. filtercontext values will be filtervalues, setfiltervalues function. when we want the context values/ or update them then we will use the both filtervalues and setfiltervalues. I extracted the setFiltervalues in the filters.js file using the object destrcuting.
+
+## step5
+
+1. created the basic subCard.js

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 const useFetch = (url) => {
   const [data, setData] = useState(null);
@@ -24,7 +24,9 @@ const useFetch = (url) => {
     fetchData();
   }, [url]);
 
-  return { data, loading, error };
+  const memoizedData = useMemo(() => data, [data]);
+
+  return { data: memoizedData, loading, error };
 };
 
 export default useFetch;
